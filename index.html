@@ -102,7 +102,7 @@
                 </div>
             </div>
             <!-- extra fruits -->
-            <div class="w-[1000px] absolute -bottom-24 left-28 flex items-center justify-between bg-white px-10 py-7 h-auto mx-auto border-2 rounded-lg">
+            <div class="w-[1000px] absolute -bottom-20 left-32 flex items-center justify-between bg-white px-10 py-7 h-auto mx-auto border-2 rounded-lg">
                 <div>
                   <img class="w-36" src="./images/fruit1.png" alt="" srcset="">
                   <h3 class="text-center">Grapes</h3>
@@ -184,17 +184,39 @@
                 <h4 class="text-center font-medium">Lemon</h4>
                 <div class="rating justify-center gap-3 my-3">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked/>
-                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
-                <div class="text-center space-y-2">
-                  <h4 class="text-info text-orange-500">Details</h4>
-                </div>
+                  <div class="text-center space-y-2">
+                    <button class="btn btn-ghost  text-orange-500" onclick="my_modal_1.showModal()"> Details </button>
+                    <dialog id="my_modal_1" class="modal">
+                      <form method="dialog" class="modal-box">
+                        <div>
+                          <img class="ml-36" src="./images/fruit2.png" alt="">
+                          <h3 class="font-bold text-lg">Strawberry</h3>
+                          <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                          making it over 2000 years old.ose</p>
+                          <div class="rating justify-center gap-3 my-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked  />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                        </div>
+                        <div class="modal-action mr-24">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="border-solid border-2 border-[#F85559] py-2 px-7 text-xl font-medium rounded-lg text-orange-500">Close</button>
+                          <button class="rounded-lg bg-[#F85559] text-white text-xl font-medium py-2 px-7">Buy Now</button>
+                        </div>
+                      </form>
+                    </dialog>
+                  </div>
               </div>
             </div>
-          <!-- first card -->
+          <!-- 2nd card -->
             <div class="card border-2">
               <figure class="mt-5">
                 <img class="w-28" src="./images/fruit7.png" alt="Shoes" />
@@ -207,17 +229,41 @@
                 <h4 class="text-center font-medium">Orange</h4>
                 <div class="rating justify-center gap-3 my-3">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked/>
+                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="text-center space-y-2">
-                  <h4 class="text-info text-orange-500">Details</h4>
+                  <button class="btn btn-ghost  text-orange-500" onclick="my_modal_2.showModal()"> Details </button>
+                  <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div>
+                        <img class="ml-36" src="./images/fruit7.png" alt="">
+                        <h3 class="font-bold text-lg">Strawberry</h3>
+                        <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                          Latin literature from 45 BC,
+                          making it over 2000 years old.ose</p>
+                        <div class="rating justify-center gap-3 my-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                      </div>
+                      <div class="modal-action mr-24">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="border-solid border-2 border-[#F85559] py-2 px-7 text-xl font-medium rounded-lg text-orange-500">Close</button>
+                        <button class="rounded-lg bg-[#F85559] text-white text-xl font-medium py-2 px-7">Buy Now</button>
+                      </div>
+                    </form>
+                  </dialog>
                 </div>
               </div>
             </div>
-          <!-- first card -->
+          <!-- 3rd card -->
             <div class="card border-2">
               <figure class="mt-5">
                 <img class="w-28" src="./images/fruit8.png" alt="Shoes" />
@@ -230,17 +276,41 @@
                 <h4 class="text-center font-medium">Red Dragon</h4>
                 <div class="rating justify-center gap-3 my-3">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked/>
+                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="text-center space-y-2">
-                  <h4 class="text-info text-orange-500">Details</h4>
+                  <button class="btn btn-ghost  text-orange-500" onclick="my_modal_3.showModal()"> Details </button>
+                  <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div>
+                        <img class="ml-36" src="./images/fruit8.png" alt="">
+                        <h3 class="font-bold text-lg">Strawberry</h3>
+                        <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                          Latin literature from 45 BC,
+                          making it over 2000 years old.ose</p>
+                        <div class="rating justify-center gap-3 my-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                      </div>
+                      <div class="modal-action mr-24">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="border-solid border-2 border-[#F85559] py-2 px-7 text-xl font-medium rounded-lg text-orange-500">Close</button>
+                        <button class="rounded-lg bg-[#F85559] text-white text-xl font-medium py-2 px-7">Buy Now</button>
+                      </div>
+                    </form>
+                  </dialog>
                 </div>
               </div>
             </div>
-          <!-- fourth card -->
+          <!-- 4rth card -->
             <div class="card border-2">
               <figure class="mt-5">
                 <img class="w-28" src="./images/fruit9.png" alt="Shoes" />
@@ -253,13 +323,37 @@
                 <h4 class="text-center font-medium">Banana</h4>
                 <div class="rating justify-center gap-3 my-3">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked/>
+                  <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"   checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="text-center space-y-2">
-                  <h4 class="text-info text-orange-500">Details</h4>
+                  <button class="btn btn-ghost  text-orange-500" onclick="my_modal_4.showModal()"> Details </button>
+                  <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div>
+                        <img class="ml-36" src="./images/fruit9.png" alt="">
+                        <h3 class="font-bold text-lg">Strawberry</h3>
+                        <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                          Latin literature from 45 BC,
+                          making it over 2000 years old.ose</p>
+                        <div class="rating justify-center gap-3 my-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                      </div>
+                      <div class="modal-action mr-24">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button
+                          class="border-solid border-2 border-[#F85559] py-2 px-7 text-xl font-medium rounded-lg text-orange-500">Close</button>
+                        <button class="rounded-lg bg-[#F85559] text-white text-xl font-medium py-2 px-7">Buy Now</button>
+                      </div>
+                    </form>
+                  </dialog>
                 </div>
               </div>
             </div>
